@@ -34,7 +34,7 @@ function App() {
          setLongitude(position.coords.longitude);
       });
   
-      await axios.get("http://localhost:8080/")
+      await axios.get("https://weather-app-backed.onrender.com")
       .then((data) => setLocationData([...data.data.data]))
       .catch((err) => console.log(err));
     })()

@@ -1,4 +1,4 @@
-import { useContext} from 'react';
+import { useContext, useState} from 'react';
 import Search from './search';
 import './styles/home.css';
 import { WeatherContext } from '../App';
@@ -6,6 +6,8 @@ import { LocationDataContext } from '../App';
 
 
 function Home() {
+
+  const [temp, setTemp] = useState(localStorage);
 
   const weather = useContext(WeatherContext);
   const location = useContext(LocationDataContext);
@@ -32,6 +34,7 @@ console.log(localStorage);
   {
       console.log(e.target.id);
       localStorage.removeItem(e.target.id);
+      setTemp({...localStorage});
   }
 
   return (
@@ -68,7 +71,7 @@ console.log(localStorage);
           <div className='user-favourites-locations-box'>
             <p>Favourite</p>
             <div className='favs-box-loc'>
-              {localStorage.length === 0 ? null : Object.keys(localStorage).map((value,i) => 
+              {localStorage.length === 0  ? null : Object.keys(temp).map((value,i) => 
                 {var val = localStorage.getItem(value).split(","); console.log(val[2]);
 
                   return (<div key={i}>
