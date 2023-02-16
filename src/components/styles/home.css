@@ -1,0 +1,156 @@
+.home-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.home-box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.home-current-details
+{
+    width: 70%;
+    padding: 20px;
+    background: rgba(12, 11, 11, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    border-radius: 10px;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.current-weather-details-box
+{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.current-weather-details
+{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 35px 15px;
+    border-radius: 10px;
+    background: rgba(12, 11, 11, 0.9);
+}
+
+.current-weather-details h1
+{
+    font-size: 65px;
+}
+
+.current-loc-details
+{
+    display: flex;
+    gap: 50px;
+}
+
+.current-weather-details > p
+{
+    width: 100%;
+    padding: 5px 15px;
+    border-radius: 15px;
+    background-color: rgb(34, 34, 34);
+    text-align: center;
+    margin: 0 50px;
+}
+
+.current-loc-header
+{
+    padding: 1px 50px;
+    border-radius: 50px;
+    background: rgba(12, 11, 11, 0.6);
+    padding-bottom: 4px;
+    text-align: center;
+}
+
+.user-favourites-locations-box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.user-favourites-locations-box > p
+{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    height: 50px;
+    width: 70%;
+    background: rgba(12, 11, 11, 1);
+    color: white;
+    padding-left: 20px;
+}
+
+.favs-box-loc
+{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.favs-box
+{
+    
+        background: rgba(12, 11, 11, 0.5);
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        padding: 15px;
+    
+}
+
+.favs-box-loc button
+{
+    width: 70px;
+    height: 35px;
+}
+
+@media screen and (max-width: 1050px) {
+   
+    .current-weather-details-box
+    {
+        display: flex;
+        flex-direction: column;
+    }
+   
+}
+
+@media screen and (max-width: 550px) {
+   
+    .home-current-details
+    {
+        width: 70%;
+    }
+
+    .current-loc-header
+    {
+        width: 300px;
+    }
+   
+}
+
+@media screen and (max-width: 500px) {
+
+    .home-current-details
+    {
+        background: none;
+    }
+   
+}
+

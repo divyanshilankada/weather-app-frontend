@@ -1,0 +1,126 @@
+.details-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.weather-main-details-box
+{
+    width: 70%;
+    padding: 50px 20px;
+    background: rgba(12, 11, 11, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    border-radius: 10px;
+    gap: 50px;
+}
+
+.today-weather-forcast-box
+{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.today-weather-forcast-box > p
+{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    height: 50px;
+    width: 100%;
+    background: rgba(12, 11, 11, 1);
+    color: white;
+    padding-left: 20px;
+}
+
+.today-weather
+{
+    display: grid;
+    grid-template-columns: 19% 19% 19% 19% 19%;
+    gap: 1%;
+}
+
+.today-three-hour-box
+{
+    background: rgba(12, 11, 11, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 15px;
+    align-items: center;
+}
+
+.today-three-hour-box > div
+{
+    width: 100%;
+}
+
+.today-three-hour-box > h1
+{
+    font-size: 40px;
+}
+
+.weather-main-details-box button
+{
+    width: 150px;
+    height: 40px;
+    
+}
+
+@media screen and (max-width: 800px) {
+
+
+    .today-weather
+    {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        gap: 3%;
+    }
+
+    .today-three-hour-box > h1
+    {
+        font-size: xx-large;
+    }
+   
+}
+
+
+@media screen and (max-width: 550px) {
+   
+    .weather-main-details-box
+    {
+        width: 70%;
+    }
+
+    .current-loc-header
+    {
+        width: 300px;
+    }
+
+    .today-weather
+    {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        gap: 3%;
+    }
+
+    .today-three-hour-box > h1
+    {
+        font-size: x-large;
+    }
+   
+}
+
+@media screen and (max-width: 500px) {
+
+    .weather-main-details-box
+    {
+        background: none;
+    }
+   
+}
